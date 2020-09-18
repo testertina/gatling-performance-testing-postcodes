@@ -10,5 +10,5 @@ object GetPostcodesRequest {
     .post(baseUrl + "/postcodes")
     .body(RawFileBody("./src/test/resources/bodies/GetPostcodes.json")).asJson
     .header("content-type", "application/json")
-    .check(status is 201)
+    .check(status is 200)
 }
